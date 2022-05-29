@@ -1,0 +1,22 @@
+Questaão  1
+
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+    Console.WriteLine("Luis Gabriel");
+  }
+}
+
+
+Questaão 2
+
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) 
+    Console.WriteLine("20211011110039");
+  }
+}
