@@ -1,0 +1,78 @@
+Questão 1
+
+using System; 
+
+class MainClass { 
+public static void Main (string[] args) { 
+
+Console.WriteLine("Digite seu nome: "); 
+
+string nome = Console.ReadLine(); 
+
+Console.WriteLine("Bem vindo ao C#, "+ nome); 
+
+} 
+
+} 
+
+Questão 2
+using System;
+
+namespace MediaAritmeticaDeTresNotasDeUmAluno
+{
+    class MediaAritmeticaDeTresNotasDeUmAluno
+    {
+        static void Main(string[] args)
+        {
+            double media, nota_1, nota_2, nota_3;
+            Console.Write("Digite o valor do nota 1: ");
+            nota_1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor do nota 2: ");
+            nota_2 = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor do nota 3: ");
+            nota_3 = double.Parse(Console.ReadLine());
+            media=(nota_1+nota_2+nota_3)/2;
+            if(media>=60)
+                Console.WriteLine("Aprovado");
+            if(media<2)
+                Console.WriteLine("Reprovado");
+            if(media>=3&&media<60)
+                Console.WriteLine("Prova final");
+            Console.WriteLine("O valor do media: " + media);
+            Console.WriteLine();
+            Console.Write("Pressione qualquer chave para terminar . . . ");
+            Console.ReadKey();
+        }
+    }
+}
+
+
+Questão 4
+
+using System; 
+
+class MainClass { 
+
+public static void Main (string[] args) { 
+
+double Base, altura, area, perimetro, diagonal, diagonal2;  
+
+Console.WriteLine ("Digite a base e a altura do retângulo"); 
+
+Base = int.Parse(Console.ReadLine()); 
+
+altura = int.Parse(Console.ReadLine()); 
+
+area = Base * altura; 
+
+perimetro = (Base + altura) * 2; 
+
+diagonal = (Base * Base) + (altura * altura); 
+
+diagonal2 = Math.Sqrt(diagonal); 
+
+Console.WriteLine ("Área = {0} - Perimetro = {1} - Diagonal = {2}", area, perimetro, diagonal2); 
+
+} 
+
+} 
