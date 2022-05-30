@@ -25,3 +25,104 @@ namespace URI_1004
         }
     }
 }
+
+URI 1005
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace URI_1005
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double A, B, somaA, somaB, media;
+
+            A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            somaA = A * 3.5;
+            somaB = B * 7.5;
+            media = (somaA + somaB) / 11;
+
+            Console.WriteLine("MEDIA = " + media.ToString("F5", CultureInfo.InvariantCulture));
+        }
+    }
+}
+
+URI 1011
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace URI_1011
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double R, raio;
+            double pi = 3.14159;
+
+            R = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            raio = (double) (4.0 / 3.0) * pi * Math.Pow(R,3.0);
+
+            Console.WriteLine("VOLUME = " + raio.ToString("F3", CultureInfo.InvariantCulture));
+        }
+    }
+}
+
+URI 1015
+
+using System; 
+ 
+class URI {
+     
+    static void Main(string[] args) { 
+        string[] input;
+        
+        input = Console.ReadLine().Split(' ');
+        double x1 = double.Parse(input[0]);
+        double y1 = double.Parse(input[1]);
+        
+        input = Console.ReadLine().Split(' ');
+        double x2 = double.Parse(input[0]);
+        double y2  = double.Parse(input[1]);
+        
+        double distancia = Math.Sqrt(Math.Pow((x2 - x1), 2.0) + Math.Pow((y2 - y1), 2.0));
+        Console.WriteLine("{0:F4}", distancia);
+    }
+    
+}
+
+URI 1930
+
+using System; 
+ 
+class URI {
+ 
+    static void Main(string[] args) {
+		string[] input = Console.ReadLine().Split(' ');
+        int T1 = int.Parse(input[0]);
+        int T2 = int.Parse(input[1]);
+        int T3 = int.Parse(input[2]);
+        int T4 = int.Parse(input[3]);
+
+        int totalTomadas = (T1 + T2 + T3 + T4) - 3;
+        Console.WriteLine(totalTomadas);
+    }
+    
+}
+
